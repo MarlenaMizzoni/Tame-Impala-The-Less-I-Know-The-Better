@@ -1,5 +1,9 @@
 /* CSS Variables */
 :root {
+    --color1: #6f4683 ;
+    --color2: #886593 ;
+    --color3: #e23e64 ;
+    --color4: #e69d25 ;
     /* main UI color */
     --plyr-color-main: darkgray;
     /* audio controls background */
