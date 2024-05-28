@@ -1,13 +1,20 @@
 /* CSS Variables */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 :root {
     --color1: #6f4683 ;
     --color2: #886593 ;
     --color3: #e23e64 ;
     --color4: #e69d25 ;
     /* main UI color */
-    --plyr-color-main: darkgray;
+    --plyr-color-main: var(--color2);
     /* audio controls background */
-    --plyr-audio-controls-background: black;
+    --plyr-audio-controls-background: linear-gradient(#886593, #e23e64, #e69d25);
     /* audio controls color */
     --plyr-audio-control-color: white;
     /* font family for player */
@@ -16,16 +23,18 @@
     --plyr-font-size-time: 16px;
 
     /* Other optional customiziations */
-    --plyr-audio-control-color-hover:  black;
-    --plyr-audio-progress-buffered-background:  black;
+    --plyr-audio-control-color-hover:  var(--color3);
+    --plyr-audio-progress-buffered-background: var(--color3);
     --plyr-audio-range-track-background: white;
     --plyr-tooltip-background: white;
     --plyr-tooltip-color: black; 
     --plyr-control-icon-size: 16px;
+    --plyr-audio-margin-bottom: 60px;
 }
 
+
 body {
-    background: gray;
+    background: linear-gradient(#886593, #6f4683, #e23e64);
 }
 
 /* Layout */
@@ -34,13 +43,22 @@ main {
     max-width: 60em;
     margin-inline: auto;
 
-    background: lightgray;
+    background: #CBC3E3;
 }
 
-main img {
+span {
     /* Fit image to container */
-    max-width: 100%;
-    display: block;
+   width: 300px;
+   height: 300px;
+    display: flex;
+    margin-left: 5px;
+}
+
+img {
+    border: 15px solid var(--color4);
+    border-radius: 20%;
+    border-style: double;
+  
 }
 
 /* Primary Content */
@@ -49,11 +67,13 @@ article {
     display: flex;
     gap: 1em;
     justify-content: center;
+  
 }
 
 article section {
     /* keep flex'd child same width */
     flex: 1;
+
 }
 
 /* Footer */
@@ -66,4 +86,29 @@ footer {
     main article {
         flex-direction: column;
     }
+}
+
+h2 {
+    font-family: "Danfo", serif;
+    font-size: 4.5rem;
+    color: var(--color3);
+  text-align: center;
+
+   
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    color: var(--color1);
+    text-align: center;
+    margin-top: 5px;
+   
+}
+
+section {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    background: #BDB5D5;
+    padding:10px;
 }
