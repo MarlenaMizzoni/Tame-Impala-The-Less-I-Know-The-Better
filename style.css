@@ -40,7 +40,7 @@ body {
 /* Layout */
 main {
     /* Fixed width center align */
-    max-width: 60em;
+    max-width: 80em;
     margin-inline: auto;
 
     background: #CBC3E3;
